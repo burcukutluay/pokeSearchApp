@@ -52,14 +52,11 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
             let url = URL(string: data.imageURLString!)
             getData(from: url!) { data, response, error in
                 guard let data = data, error == nil else { return }
-                DispatchQueue.main.async() { [weak self] in
-                    cell.imageView?.image = nil
+                DispatchQueue.main.async() {
                     cell.imageView?.image = UIImage(data: data)
                     cell.setNeedsLayout()
                 }
             }
-            
-            
         }
         else {
             cell.descriptionLabel.text = "no favorited poke"

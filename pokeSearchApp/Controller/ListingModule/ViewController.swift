@@ -10,12 +10,13 @@ import pokeFW
 
 let appDel = UIApplication.shared.delegate as! AppDelegate
 
-class ViewController: UIViewController, UISearchBarDelegate  {
-    
+class ViewController: UIViewController, UISearchBarDelegate, InfoViewDelegate  {
+        
     // MARK: - Layout Components
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var searchBar:UISearchBar!
+    @IBOutlet weak var scrollContentView: UIScrollView!
     @IBOutlet weak var favoriteButton: UIButton!
     
     @IBAction func favoriteButtonPressed(_ sender: Any) {
@@ -38,23 +39,18 @@ class ViewController: UIViewController, UISearchBarDelegate  {
         self.searchBar.backgroundColor = UIColor.ColorPalette.secondaryBackgroundColor
         self.searchBar.searchTextField.backgroundColor = UIColor.ColorPalette.secondaryBackgroundColor
         self.searchBar.placeholder = "Search a Pokemon by name"
-        searchBar.delegate = self
+        self.favoriteButton.isHidden = true
+        self.searchBar.delegate = self
+        // to prevent _UITemporaryLayoutWidth error init with frame & give width for infoView
+        self.infoView = InfoView.init(frame: CGRect(x: 0, y: 75, width: screenWidth, height: 0))
+        self.infoView.infoViewDelegate = self
     }
     
     // MARK: - Layout Functions
     
     func arrangeSearchResultView(keyword: String) {
         if keyword.count > 0 {
-            let screenSize = UIScreen.main.bounds
-            let screenWidth = screenSize.width
-            let screenHeight = screenSize.height
-            let infoSubView = InfoView.init(frame: CGRect(x: 0, y: 75, width: screenWidth, height: screenHeight - 200))
-            self.infoView = infoSubView
-            self.infoView.backgroundColor = UIColor.clear
-            self.contentView.addSubview(infoSubView)
-            self.favoriteButton.bringSubviewToFront(contentView)
             infoView.getAndSetResultView(keyword: keyword)
-            self.reloadInputViews()
         }
         else {
             self.deleteInfoView()
@@ -62,15 +58,40 @@ class ViewController: UIViewController, UISearchBarDelegate  {
     }
     
     func deleteInfoView() {
-        for item in self.contentView.subviews {
+        self.favoriteButton.isHidden = true
+        for item in self.scrollContentView.subviews {
             if item.classForCoder == pokeFW.InfoView.classForCoder() {
                 item.removeFromSuperview()
             }
         }
+        self.infoView.deleteSubviews()
         self.reloadInputViews()
     }
-        
-    // MARK: - SearchBar Functions
+    
+    func arrangeFavoriteButton() {
+        self.favoriteButton.isHidden = false
+        self.favoriteButton.bringSubviewToFront(contentView)
+        if self.checkIfFav() {
+            self.favoriteButton.setTitle("Remove From Favorites", for: .normal)
+        }
+        else {
+            self.favoriteButton.setTitle("Add to Favorites", for: .normal)
+        }
+    }
+    
+    // MARK: - InfoViewDelegate Functions
+    
+    func viewShouldReturn(view: InfoView, height: CGFloat) {
+        self.infoView = view
+        self.infoView.backgroundColor = UIColor.clear
+        self.infoView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: height)
+        self.scrollContentView.addSubview(infoView)
+        // to enable scroll view
+        self.scrollContentView.contentSize = CGSize(width: screenWidth, height: height)
+        self.arrangeFavoriteButton()
+    }
+    
+    // MARK: - SearchBar Delegate Functions
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text?.count ?? 0 < 2 {
@@ -102,6 +123,7 @@ class ViewController: UIViewController, UISearchBarDelegate  {
             }
         }
         appDel.userInfo.favoritedPokemons = list
+        self.arrangeFavoriteButton()
     }
     
     fileprivate func addFavoritedPokemons(pokeUrl: String, pokeDescription: String) {
@@ -111,6 +133,7 @@ class ViewController: UIViewController, UISearchBarDelegate  {
         poke.imageURLString = pokeUrl
         list.append(poke)
         appDel.userInfo.favoritedPokemons = list
+        self.arrangeFavoriteButton()
     }
     
     // MARK: - Favorite Functions

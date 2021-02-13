@@ -18,7 +18,7 @@ final class UserInfoModel {
             do {
                 return try JSONDecoder().decode([Pokemons].self, from: data)
             } catch let error {
-                print("Fatal error occured when decoding object")
+                print("Fatal error occured when decoding object\(error)")
             }
             return [Pokemons]()
         }
@@ -27,7 +27,7 @@ final class UserInfoModel {
                 let encodedData = try JSONEncoder().encode(newValue)
                 appDel.keychainManager.set(encodedData, forKey: "favoritedPokemons")
             } catch let error {
-                print("Fatal error occured when encoding object")
+                print("Fatal error occured when encoding object\(error)")
             }
         }
     }
