@@ -15,8 +15,8 @@ class FavoritesTableViewCell: UITableViewCell, Reusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.imageView?.image = nil
-        self.lineView.backgroundColor = UIColor.ColorPalette.backgroundColor
+        self.pokeImageView?.image = nil
+        self.lineView.backgroundColor = UIColor.gray
         self.descriptionLabel.textColor = UIColor.ColorPalette.labelColor
     }
 

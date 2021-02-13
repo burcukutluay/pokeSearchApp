@@ -91,6 +91,17 @@ class ViewController: UIViewController, UISearchBarDelegate, InfoViewDelegate  {
         self.arrangeFavoriteButton()
     }
     
+    func emptyViewShouldReturn(errorMessage: String, type: String) {
+        var title = "No Data"
+        if type == "Error" {
+            title = "Error"
+        }
+        
+        let alert = UIAlertController(title: title, message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: - SearchBar Delegate Functions
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

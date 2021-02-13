@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		503ECE8E25CF3C130018685A /* pokeFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503ECE8725CF3C070018685A /* pokeFW.framework */; };
-		503ECE8F25CF3C130018685A /* pokeFW.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 503ECE8725CF3C070018685A /* pokeFW.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AA548AF5EE6C3084C9E597C /* Pods_pokeSearchApp_pokeSearchAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B07C99384E2057A2A1809A /* Pods_pokeSearchApp_pokeSearchAppUITests.framework */; };
 		5091CCAD25CEFB350002C1F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5091CCAC25CEFB350002C1F8 /* AppDelegate.swift */; };
 		5091CCAF25CEFB350002C1F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5091CCAE25CEFB350002C1F8 /* SceneDelegate.swift */; };
 		5091CCB125CEFB350002C1F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5091CCB025CEFB350002C1F8 /* ViewController.swift */; };
@@ -27,23 +26,13 @@
 		50B088D725D0726900C87ED5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B088D625D0726900C87ED5 /* StringExtension.swift */; };
 		50B088DB25D0727700C87ED5 /* GenericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B088DA25D0727700C87ED5 /* GenericExtension.swift */; };
 		50B088E525D075B300C87ED5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B088E425D075B300C87ED5 /* ColorExtension.swift */; };
+		50F8B6C425D86D84003D7A81 /* pokeFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F8B6BF25D86D56003D7A81 /* pokeFW.framework */; };
+		50F8B6C525D86D84003D7A81 /* pokeFW.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F8B6BF25D86D56003D7A81 /* pokeFW.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72BED012FDAA3EC6EA3FEC43 /* Pods_pokeSearchAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEC74E332FA777725E40A62 /* Pods_pokeSearchAppTests.framework */; };
+		D47B7FDEDE329778D708E8D7 /* Pods_pokeSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA87A88CB0FE59E388A81D1 /* Pods_pokeSearchApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		503ECE8625CF3C070018685A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 503ECE8125CF3C070018685A /* pokeFW.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5000962125CEA92600DFE5B6;
-			remoteInfo = pokeFW;
-		};
-		503ECE8825CF3C070018685A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 503ECE8125CF3C070018685A /* pokeFW.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5000962A25CEA92600DFE5B6;
-			remoteInfo = pokeFWTests;
-		};
 		5091CCC325CEFB370002C1F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5091CCA125CEFB350002C1F8 /* Project object */;
@@ -58,16 +47,23 @@
 			remoteGlobalIDString = 5091CCA825CEFB350002C1F8;
 			remoteInfo = pokeSearchApp;
 		};
+		50F8B6BE25D86D56003D7A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F8B6BA25D86D56003D7A81 /* pokeFW.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5000962125CEA92600DFE5B6;
+			remoteInfo = pokeFW;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		50A6BD1625CF0843002350B1 /* Embed Frameworks */ = {
+		50F8B6C625D86D84003D7A81 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				503ECE8F25CF3C130018685A /* pokeFW.framework in Embed Frameworks */,
+				50F8B6C525D86D84003D7A81 /* pokeFW.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +73,9 @@
 /* Begin PBXFileReference section */
 		012BB59ABC11C77FCDDF99F2 /* Pods-pokeSearchAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeSearchAppTests.debug.xcconfig"; path = "Target Support Files/Pods-pokeSearchAppTests/Pods-pokeSearchAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0A3CF6ED60C74CAB42CA024F /* Pods-pokeSearchApp-pokeSearchAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeSearchApp-pokeSearchAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-pokeSearchApp-pokeSearchAppUITests/Pods-pokeSearchApp-pokeSearchAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EEC74E332FA777725E40A62 /* Pods_pokeSearchAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeSearchAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA87A88CB0FE59E388A81D1 /* Pods_pokeSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDA033401A4C1FDA19FA1FB /* Pods-pokeSearchAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeSearchAppTests.release.xcconfig"; path = "Target Support Files/Pods-pokeSearchAppTests/Pods-pokeSearchAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		503ECE8125CF3C070018685A /* pokeFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pokeFW.xcodeproj; path = ../pokeFW/pokeFW.xcodeproj; sourceTree = "<group>"; };
 		5091CCA925CEFB350002C1F8 /* pokeSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokeSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5091CCAC25CEFB350002C1F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5091CCAE25CEFB350002C1F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +100,9 @@
 		50B088D625D0726900C87ED5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		50B088DA25D0727700C87ED5 /* GenericExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericExtension.swift; sourceTree = "<group>"; };
 		50B088E425D075B300C87ED5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		50F8B6A425D86D00003D7A81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F8B6BA25D86D56003D7A81 /* pokeFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pokeFW.xcodeproj; path = ../../pokeFW/pokeFW.xcodeproj; sourceTree = "<group>"; };
+		70B07C99384E2057A2A1809A /* Pods_pokeSearchApp_pokeSearchAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeSearchApp_pokeSearchAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE860E7B1B7F624FA172F6C /* Pods-pokeSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-pokeSearchApp/Pods-pokeSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C000DE1E65FEA1708D98B359 /* Pods-pokeSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeSearchApp.release.xcconfig"; path = "Target Support Files/Pods-pokeSearchApp/Pods-pokeSearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		DFF7397D0283FC3E20A9FECD /* Pods-pokeSearchApp-pokeSearchAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeSearchApp-pokeSearchAppUITests.release.xcconfig"; path = "Target Support Files/Pods-pokeSearchApp-pokeSearchAppUITests/Pods-pokeSearchApp-pokeSearchAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503ECE8E25CF3C130018685A /* pokeFW.framework in Frameworks */,
+				50F8B6C425D86D84003D7A81 /* pokeFW.framework in Frameworks */,
+				D47B7FDEDE329778D708E8D7 /* Pods_pokeSearchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BED012FDAA3EC6EA3FEC43 /* Pods_pokeSearchAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,25 +130,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA548AF5EE6C3084C9E597C /* Pods_pokeSearchApp_pokeSearchAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		503ECE8225CF3C070018685A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				503ECE8725CF3C070018685A /* pokeFW.framework */,
-				503ECE8925CF3C070018685A /* pokeFWTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5091CCA025CEFB350002C1F8 = {
 			isa = PBXGroup;
 			children = (
-				503ECE8125CF3C070018685A /* pokeFW.xcodeproj */,
 				5091CCAB25CEFB350002C1F8 /* pokeSearchApp */,
 				5091CCC525CEFB370002C1F8 /* pokeSearchAppTests */,
 				5091CCD025CEFB370002C1F8 /* pokeSearchAppUITests */,
@@ -169,6 +162,7 @@
 		5091CCAB25CEFB350002C1F8 /* pokeSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				50F8B6BA25D86D56003D7A81 /* pokeFW.xcodeproj */,
 				50B088BF25D05F7000C87ED5 /* Helper */,
 				50B088BE25D05F5D00C87ED5 /* Model */,
 				50B088BD25D05F3600C87ED5 /* Storyboard */,
@@ -201,6 +195,10 @@
 		50A6BD1325CF0843002350B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50F8B6A425D86D00003D7A81 /* Alamofire.framework */,
+				1AA87A88CB0FE59E388A81D1 /* Pods_pokeSearchApp.framework */,
+				70B07C99384E2057A2A1809A /* Pods_pokeSearchApp_pokeSearchAppUITests.framework */,
+				0EEC74E332FA777725E40A62 /* Pods_pokeSearchAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,6 +277,14 @@
 			path = FavTableViewCell;
 			sourceTree = "<group>";
 		};
+		50F8B6BB25D86D56003D7A81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50F8B6BF25D86D56003D7A81 /* pokeFW.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F084B29B88E6325A7873D0E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +310,7 @@
 				5091CCA625CEFB350002C1F8 /* Frameworks */,
 				5091CCA725CEFB350002C1F8 /* Resources */,
 				5F5911319307D8DA58C21ECE /* [CP] Embed Pods Frameworks */,
-				50A6BD1625CF0843002350B1 /* Embed Frameworks */,
+				50F8B6C625D86D84003D7A81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,8 +396,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 503ECE8225CF3C070018685A /* Products */;
-					ProjectRef = 503ECE8125CF3C070018685A /* pokeFW.xcodeproj */;
+					ProductGroup = 50F8B6BB25D86D56003D7A81 /* Products */;
+					ProjectRef = 50F8B6BA25D86D56003D7A81 /* pokeFW.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -404,18 +410,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		503ECE8725CF3C070018685A /* pokeFW.framework */ = {
+		50F8B6BF25D86D56003D7A81 /* pokeFW.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = pokeFW.framework;
-			remoteRef = 503ECE8625CF3C070018685A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		503ECE8925CF3C070018685A /* pokeFWTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = pokeFWTests.xctest;
-			remoteRef = 503ECE8825CF3C070018685A /* PBXContainerItemProxy */;
+			remoteRef = 50F8B6BE25D86D56003D7A81 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -761,7 +760,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DE860E7B1B7F624FA172F6C /* Pods-pokeSearchApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -782,7 +780,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C000DE1E65FEA1708D98B359 /* Pods-pokeSearchApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

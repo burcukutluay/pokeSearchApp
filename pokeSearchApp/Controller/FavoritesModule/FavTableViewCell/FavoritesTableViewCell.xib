@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,15 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="410" height="235"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOw-Lg-UuM">
-                        <rect key="frame" x="15" y="67.5" width="100" height="100"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="100" id="LcR-Gn-UtM"/>
-                            <constraint firstAttribute="width" constant="100" id="a9A-Ag-m0i"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-sS-I5r">
-                        <rect key="frame" x="130" y="15" width="265" height="205"/>
+                        <rect key="frame" x="15" y="120" width="380" height="100"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -38,19 +32,26 @@
                             <constraint firstAttribute="height" constant="1" id="MzH-ac-358"/>
                         </constraints>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-3g-bZH">
+                        <rect key="frame" x="155" y="15" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="NgP-sI-94o"/>
+                            <constraint firstAttribute="height" constant="100" id="ol5-P9-6GD"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="XOw-Lg-UuM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="10I-Uo-eyo"/>
                     <constraint firstAttribute="bottom" secondItem="KvC-sS-I5r" secondAttribute="bottom" constant="15" id="3EP-vJ-hxy"/>
-                    <constraint firstItem="KvC-sS-I5r" firstAttribute="leading" secondItem="XOw-Lg-UuM" secondAttribute="trailing" constant="15" id="EJ0-LK-LBJ"/>
+                    <constraint firstItem="3aW-3g-bZH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="8Bf-T2-wdf"/>
                     <constraint firstAttribute="trailing" secondItem="KvC-sS-I5r" secondAttribute="trailing" constant="15" id="Ell-Mn-rY1"/>
+                    <constraint firstItem="KvC-sS-I5r" firstAttribute="top" secondItem="3aW-3g-bZH" secondAttribute="bottom" constant="5" id="Fwe-ii-PJk"/>
                     <constraint firstAttribute="bottom" secondItem="Cv0-lh-dMi" secondAttribute="bottom" id="Ipb-J1-vGy"/>
-                    <constraint firstItem="KvC-sS-I5r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="TiD-4I-zuD"/>
                     <constraint firstAttribute="trailing" secondItem="Cv0-lh-dMi" secondAttribute="trailing" id="WAo-0p-tpB"/>
-                    <constraint firstItem="XOw-Lg-UuM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dMK-uY-Klx"/>
+                    <constraint firstItem="3aW-3g-bZH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="k64-xK-C0h"/>
                     <constraint firstItem="Cv0-lh-dMi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="n72-3a-buh"/>
                     <constraint firstAttribute="trailing" secondItem="Cv0-lh-dMi" secondAttribute="trailing" id="uhe-34-SZX"/>
                     <constraint firstItem="Cv0-lh-dMi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vCN-AG-Lyo"/>
+                    <constraint firstItem="KvC-sS-I5r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vXk-4K-FdG"/>
                     <constraint firstAttribute="bottom" secondItem="Cv0-lh-dMi" secondAttribute="bottom" id="xkE-x0-8x9"/>
                 </constraints>
             </tableViewCellContentView>
@@ -58,7 +59,7 @@
             <connections>
                 <outlet property="descriptionLabel" destination="KvC-sS-I5r" id="iOs-UV-gfC"/>
                 <outlet property="lineView" destination="Cv0-lh-dMi" id="bYA-oB-kJI"/>
-                <outlet property="pokeImageView" destination="XOw-Lg-UuM" id="qD6-tz-ygI"/>
+                <outlet property="pokeImageView" destination="3aW-3g-bZH" id="mVU-Dt-N7P"/>
             </connections>
             <point key="canvasLocation" x="-110.14492753623189" y="100.78125"/>
         </tableViewCell>

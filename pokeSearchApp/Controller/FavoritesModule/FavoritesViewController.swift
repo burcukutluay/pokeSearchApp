@@ -46,6 +46,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: FavoritesTableViewCell = tableView.createCell(indexPath)
         cell.backgroundColor = UIColor.ColorPalette.secondaryBackgroundColor
+        cell.pokeImageView.image = nil
         if appDel.userInfo.favoritedPokemons.count > 0 {
             let data = appDel.userInfo.favoritedPokemons[indexPath.row]
             cell.descriptionLabel.text = data.description
@@ -53,13 +54,13 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
             getData(from: url!) { data, response, error in
                 guard let data = data, error == nil else { return }
                 DispatchQueue.main.async() {
-                    cell.imageView?.image = UIImage(data: data)
+                    cell.pokeImageView?.image = UIImage(data: data)
                     cell.setNeedsLayout()
                 }
             }
         }
         else {
-            cell.descriptionLabel.text = "no favorited poke"
+            cell.descriptionLabel.text = "You have no favorited poke :( Search more and add some to your favorites!"
             cell.imageView?.image = nil
         }
         

@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "3A63D131-8DAC-486B-A55D-EEE1C5664B74"
+   uuid = "815B21C4-34C1-4EDF-9507-5C73C55F76CD"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E3D0849-B1BD-4435-9BA3-19EDE96D44AB"
+            uuid = "6FDA1908-AA61-4953-917A-52544089DCA2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "pokeFW/Components/InfoView/InfoView.swift"
+            filePath = "../pokeFW/pokeFW/Components/InfoView/InfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "getDescriptionResult(keyword:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B4CD61D5-F3B3-4351-BBCF-A42148290E74"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "pokeFW/Components/InfoView/InfoView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "getFlavorText(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0AFB25DE-3F04-478E-8D5C-CB8ED0B24228"
+            uuid = "F5819D22-BC79-4D98-A4F9-156D48E59C8C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "pokeFW/Components/InfoView/InfoView.swift"
+            filePath = "../pokeFW/pokeFW/Components/InfoView/InfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "getFlavorText(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -55,15 +39,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F68151ED-AA3B-43F7-8CD5-C1139C8A0887"
+            uuid = "5F562443-6C81-4887-A344-E07FBD7AAD39"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "pokeFW/Components/InfoView/InfoView.swift"
+            filePath = "../pokeFW/pokeFW/Components/InfoView/InfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "getFlavorText(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
