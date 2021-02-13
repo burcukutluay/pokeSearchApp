@@ -53,6 +53,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
             getData(from: url!) { data, response, error in
                 guard let data = data, error == nil else { return }
                 DispatchQueue.main.async() { [weak self] in
+                    cell.imageView?.image = nil
                     cell.imageView?.image = UIImage(data: data)
                     cell.setNeedsLayout()
                 }
@@ -62,6 +63,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         else {
             cell.descriptionLabel.text = "no favorited poke"
+            cell.imageView?.image = nil
         }
         
         return cell
