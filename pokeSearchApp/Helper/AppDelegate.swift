@@ -7,14 +7,22 @@
 
 import UIKit
 import CoreData
+import KeychainSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    internal final let keychainManager = KeychainSwift()
+    internal final var userDefaults = UserDefaults()
+    internal final var userInfo = UserInfoModel.shared
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // delete keychain data if app is deleted.
+        if userDefaults.bool(forKey: "hasRunBefore") == false {
+            appDel.keychainManager.clear()
+             userDefaults.setValue(true, forKey: "hasRunBefore")
+             userDefaults.synchronize()
+         }
         return true
     }
 
