@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6FDA1908-AA61-4953-917A-52544089DCA2"
+            uuid = "BC72E7F5-6E28-4072-8652-44D18A46BC7C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pokeFW/pokeFW/Components/InfoView/InfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "getFlavorText(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F5819D22-BC79-4D98-A4F9-156D48E59C8C"
+            uuid = "C80C9064-15A4-44C5-B77D-A849655E2AF3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pokeFW/pokeFW/Components/InfoView/InfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "getFlavorText(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,15 +39,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5F562443-6C81-4887-A344-E07FBD7AAD39"
+            uuid = "8278810A-0EA3-4B45-8D4B-D644738F7293"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pokeFW/pokeFW/Components/InfoView/InfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "getFlavorText(keyword:)"
             landmarkType = "7">
          </BreakpointContent>
