@@ -12,3 +12,13 @@ pod 'AlamofireImage'
 pod 'CodableAlamofire'
 pod 'KeychainSwift'
 ```
+
+pokeSearchApp uses pokeFW framework, which is attached as XCFramework by adding existing frameworks to the project.
+
+To include a framework to Xcode project, choose Project > Add to Project and select the framework directory.
+Alternatively, you can control-click your project group and choose Add Files > Existing Frameworks from the contextual menu.
+
+## pokeSearchApp How to Use
+
+pokeSearchApp contains a search bar which allows to users to type and when the search is clicked, pokeFW framework functions will be fired.
+to run the pokeSearchApp, you can open pokeSearchApp.xcworkspace and run or download dependencies and adding pokeFW.framework and run the project.
