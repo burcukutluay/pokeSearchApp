@@ -15,8 +15,10 @@ pod 'KeychainSwift'
 
 pokeSearchApp uses pokeFW framework, which is attached as XCFramework by adding existing frameworks to the project.
 
-To include a framework to Xcode project, choose Project > Add to Project and select the framework directory.
-Alternatively, you can control-click your project group and choose Add Files > Existing Frameworks from the contextual menu.
+>To include a framework to Xcode project, choose Project > Add to Project and select the framework directory.
+>Alternatively, you can control-click your project group and choose Add Files > Existing Frameworks from the contextual menu.
+
+For more information about pokeFW framework, follow the link: [pokeFW](https://github.com/burcukutluay/pokeFW/)
 
 ## pokeSearchApp How to Use
 
